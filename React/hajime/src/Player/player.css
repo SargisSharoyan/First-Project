@@ -1,0 +1,45 @@
+.plrContainer{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: grey;
+    bottom: 0px;
+    z-index: 99;
+    display: block;
+
+}
+.plrPhoto{
+    width:55px;
+    background-color: #1f1f1f;
+}
+.plrPhoto img{
+    width:55px;
+}
+.btnCont i{
+    color: #fff;
+    font-size: 32px;
+    transition: all 700ms ease;
+
+}
+.btnCont i:hover{
+    color: #7d3002;
+    transition: all 700ms ease;
+
+}
+.btnCont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100px;
+}
+.progressBar{
+    height: 5px;
+    width:100%;
+    background-color: #7d3002;
+}
+.plrCont{
+    display: flex;
+    height: 55px;
+
+}

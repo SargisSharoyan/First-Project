@@ -1,0 +1,161 @@
+@import url('//db.onlinewebfonts.com/c/297b9df3e309c6dcddfe08041bd80842?family=CCVengeanceIsMineBody');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('//db.onlinewebfonts.com/c/6bccacc0af0302222227e090e8a03f3f?family=Scriptina');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 5.5vw;
+    margin-right: 5.5vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-item{
+    display: block;
+    padding: 10px 30px;
+    margin:0px 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    transition: all 700ms ease;
+}
+.nav-item:hover{
+    color: #7d3002;
+}
+.Logo{
+    font-family: 'CCVengeanceIsMineBody';
+    font-size: 3vw;
+    line-height: 24px;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px 3px;
+}
+
+.social-item{
+    padding: 0.4vw;
+}
+.social-icons {
+    background-color: rgba(26, 10, 1, 0);
+    color: #ffffff;
+    transition: ease 400ms;
+    font-size: 20px;
+
+}
+
+.social-icons :hover {
+    background-color: rgba(26, 10, 1, 0);
+    color: #7d3002;
+    transition: ease 400ms;
+
+}
+.mobile-menu-icon{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:1081px){
+    .nav-item{
+        padding: 10px 15px;
+        font-size: 17px;
+    }
+    .navbar{
+        padding: 0px 15px;
+    }
+}
+@media screen and (max-width:918px){
+    .nav-item{
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    .navbar{
+        padding: 0px 15px;
+    }
+}
+@media screen and (max-width:680px){
+    .nav-links,
+    .social{
+        display: none;
+    }
+    .Logo{
+        font-size: 35px;
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        align-items: center;
+        font-size:30px;
+        color: #fefefe;
+        background-color: rgba(26, 10, 1, 0);
+        border: none;
+        outline:none;
+        right: 25px;
+    }
+    .nav-item{
+        font-size: 18px;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style:none;
+        background-color: grey;
+        top: 60px;
+        width: 100%;
+        transition: 0.5s ease;
+    }
+    .nav-item{
+        width:100%;
+        text-align: center;
+        padding: 16px;
+    }
+    .social-links-mobile{
+        display: block;
+        position: absolute;
+        background-color: grey;
+        top: 340px;
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .social-icons{
+        font-size: 25px;
+        margin-left: 8px;
+        margin-right: 8px;
+
+    }
+}

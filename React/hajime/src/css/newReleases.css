@@ -1,0 +1,78 @@
+.nRcontainer{
+    padding-top: 100px;
+    background-color: #1c0f0a ;
+    height: 3000px;
+
+}
+.contGrid{
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    justify-content: space-around;
+    
+}
+
+.Card_nwrel{
+    width: 250px;
+    height: 350px;
+    margin-bottom: 50px;
+    display: inline-block;
+    background-color: #140b08;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6); 
+}
+.card-photo img{
+    width: 100%;
+    height: 250px;
+
+}
+.card-content{
+    display: block;
+    justify-content: center;
+}
+.card-content p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+
+
+}
+.card-content .Artist{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 12px;
+    color: gray;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.card-content .Year{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10px;
+    color: gray;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+@media screen and (max-width:1081px){
+    .contGrid{
+        grid-template-columns: repeat(3,250px);
+    }
+}
+@media screen and (max-width:918px){
+    .contGrid{
+        grid-template-columns: repeat(2,250px);
+    }
+}
+@media screen and (max-width:680px){
+    .contGrid{
+        grid-template-columns: 300px;
+    }
+    .Card_nwrel{
+        width: 300px;
+        height: 400px;
+        margin-bottom: 40px;
+    }
+    .card-photo img{
+        width: 100%;
+        height: 300px;
+    }
+
+}

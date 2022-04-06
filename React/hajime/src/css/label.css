@@ -1,0 +1,53 @@
+.Lbcontainer {
+    padding-top: 100px;
+    background-color: #1c0f0a;
+    height: 3000px;
+    transition: all 700ms ease;
+}
+
+.Card_lbArt {
+    margin-bottom: 50px;
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    background-color: #140b08;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.Card_lbArt .card-photo img {
+    height: 300px;
+    width: 100%;
+}
+.Card_lbArt .card-content .Artist{
+    margin-top: 5px;
+    font-size: 25px;
+}
+.Lbcontainer .contGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-around;
+
+}
+@media screen and (max-width:1081px){
+    .Lbcontainer .contGrid{
+        grid-template-columns: repeat(2,300px);
+    }
+}
+@media screen and (max-width:680px){
+    .Lbcontainer .contGrid{
+        grid-template-columns: 350px;
+    }
+    .Card_lbArt{
+        width: 350px;
+        height: 400px;
+        margin-bottom: 40px;
+    }
+    .Card_lbArt .card-photo img{
+        width: 100%;
+        height: 350px;
+    }
+    .Card_lbArt .card-content .Artist{
+        margin-top: 5px;
+        font-size: 29px;
+    }
+}
